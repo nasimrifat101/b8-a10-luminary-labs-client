@@ -18,7 +18,7 @@ const AddProducts = () => {
    const product ={image, name, brand, type, price, description, rating}
    console.log(product)
 
-    fetch("https://luminary-labs-server-14hdghbng-nasimrifat101.vercel.app/phones", {
+    fetch("http://localhost:5000/phones", {
       method: "post",
       headers: {
         "content-type": "application/json",

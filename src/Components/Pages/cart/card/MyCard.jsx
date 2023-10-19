@@ -7,7 +7,7 @@ const MyCard = ({ product }) => {
 
   const handleRemove = () => {
     console.log("Remove button clicked", id);
-    fetch(`https://luminary-labs-server-14hdghbng-nasimrifat101.vercel.app/cart/${id}`, {
+    fetch(`http://localhost:5000/cart/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

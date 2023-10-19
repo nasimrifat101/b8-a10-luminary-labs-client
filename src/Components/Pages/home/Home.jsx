@@ -4,7 +4,7 @@ import Brands from "./components/Brands";
 import Featured from "./components/Featured";
 import SaleBanner from "./components/SaleBanner";
 import WhyChoseeUs from "./components/WhyChoseeUs";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 const Home = () => {
     return (
@@ -15,7 +15,7 @@ const Home = () => {
            <Featured></Featured>
            <SaleBanner></SaleBanner>
            <WhyChoseeUs></WhyChoseeUs>
-           {/* <Footer></Footer> */}
+           <Footer></Footer>
         </div>
     );
 };
