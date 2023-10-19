@@ -11,7 +11,7 @@ const Product = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`https://luminary-labs-server-exgv6y7ny-nasimrifat101.vercel.app/phone/${brand}`)
+        fetch(`https://luminary-labs-server-14hdghbng-nasimrifat101.vercel.app/phone/${brand}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)

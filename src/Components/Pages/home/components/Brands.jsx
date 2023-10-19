@@ -6,7 +6,7 @@ const Brands = () => {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    fetch("https://luminary-labs-server-exgv6y7ny-nasimrifat101.vercel.app/brands")
+    fetch("https://luminary-labs-server-14hdghbng-nasimrifat101.vercel.app/brands")
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);
