@@ -14,7 +14,7 @@ const FeatureCard = ({ item }) => {
             <p>{brand}</p>
             <p>${price}</p>
           </div>
-          <button className="btn btn-sm btn-accent">upto 30% off</button>
+          <button className="btn btn-sm btn-accent">buy now</button>
           <div className="card-actions justify-end"></div>
         </div>
       </div>
