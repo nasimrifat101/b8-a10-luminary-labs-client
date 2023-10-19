@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.postimg.cc/02XC3BCy/Draw-Kit-Vector-Illustration-Black-Friday-Online-Shopping-3.png",
+      "name": "Fast & Secure Payment",
+      "details": "We offer fast and secure payment options to ensure a smooth shopping experience for our customers."
+    },
+    {
+      "id": 2,
+      "image": "https://i.postimg.cc/dQ4Rkxpj/Draw-Kit-Vector-Illustration-Black-Friday-Online-Shopping-9.png",
+      "name": "24/7 Customer Support",
+      "details": "Our dedicated customer support team is available 24/7 to assist you with any inquiries or issues."
+    },
+    {
+      "id": 3,
+      "image": "https://i.postimg.cc/RVZRgBKY/Draw-Kit-Vector-Illustration-Black-Friday-Online-Shopping-4.png",
+      "name": "Wide Range of Products",
+      "details": "Explore our extensive collection of tech products, ranging from the latest gadgets to accessories."
+    },
+    {
+      "id": 4,
+      "image": "https://i.postimg.cc/t41zHNrt/Draw-Kit-Vector-Illustration-Black-Friday-Online-Shopping-1.png",
+      "name": "Quality Assurance",
+      "details": "We guarantee the quality of our products, ensuring you receive top-notch items every time you shop with us."
+    }
+  ]
+  
