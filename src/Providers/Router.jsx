@@ -38,12 +38,12 @@ const router = createBrowserRouter([
         {
             path: '/update/:id',
             element:<PrivateRoute><Update></Update></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/phones/${params.id}`)
+            loader: ({params}) => fetch(`https://luminary-labs-server-exgv6y7ny-nasimrifat101.vercel.app/phones/${params.id}`)
         },
         {
             path: '/details/:id',
             element: <PrivateRoute><Details></Details></PrivateRoute>,
-            loader: ({ params }) => fetch(`http://localhost:5000/phones/${params.id}`)
+            loader: ({ params }) => fetch(`https://luminary-labs-server-exgv6y7ny-nasimrifat101.vercel.app/phones/${params.id}`)
         },
         {
             path: '/product/:brand',

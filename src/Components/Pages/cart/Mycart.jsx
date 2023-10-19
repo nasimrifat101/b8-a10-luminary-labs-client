@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../navbar/Navbar";
 import MyCard from "./card/MyCard";
-import { useLoaderData } from "react-router-dom";
+
 
 const Mycart = () => {
  const [products, setProducts] = useState([])
@@ -9,7 +9,7 @@ const Mycart = () => {
 
 
   useEffect(()=>{
-    fetch('http://localhost:5000/cart')
+    fetch('https://luminary-labs-server-exgv6y7ny-nasimrifat101.vercel.app/cart')
     .then(res => res.json())
     .then(data=>{
       console.log(data)
