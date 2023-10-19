@@ -6,15 +6,15 @@ const FeatureCard = ({ item }) => {
     <div>
       <div className="card card-compact bg-base-100 hover:shadow-xl border">
         <figure>
-          <img src={image} alt="Shoes" className="h-32 p-3" />
+          <img src={image} alt="Shoes" className="h-24 lg:h-32 p-3" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-sm">{name}</h2>
+          <h2 className="lg:card-title font-semibold text-xs">{name}</h2>
           <div className="flex justify-between">
-            <p>{brand}</p>
-            <p>${price}</p>
+            <p className="text-xs lg:text-sm">{brand}</p>
+            <p className="text-xs lg:text-sm">${price}</p>
           </div>
-          <button className="btn btn-sm btn-accent">buy now</button>
+          <button className="btn hidden lg:block btn-sm btn-accent">buy now</button>
           <div className="card-actions justify-end"></div>
         </div>
       </div>

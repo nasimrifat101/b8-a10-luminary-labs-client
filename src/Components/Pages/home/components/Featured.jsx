@@ -18,9 +18,9 @@ const Featured = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto mb-20">
-      <h1 className="text-5xl font-bold mb-10">Featured Products</h1>
-      <div className="grid grid-cols-6 gap-3">
+    <div className="max-w-6xl mx-auto mb-10 lg:mb-20">
+      <h1 className="text-xl text-center lg:text-left lg:text-5xl font-bold mb-10">Featured Products</h1>
+      <div className="grid grid-cols-2 p-2 lg:p-0 lg:grid-cols-6 gap-3">
         {products.map((item) => (
           <Link to={`/details/${item._id}`}  key={item._id} >
             <FeatureCard item={item}></FeatureCard>
