@@ -5,7 +5,7 @@ const BrandCard = ({ brandd }) => {
   const { photo, brand } = brandd;
   return (
     <div>
-      <div className="card h-52 bg-[#F9FCFF] hover:shadow-xl">
+      <div className="card h-52 border hover:shadow-xl">
         <div className="card-body">
           <h2 className="card-title">{brand}</h2>
         </div>
