@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
           <Link
             to="/"
-            className="font-semibold text-xl font-young text-[#163A1E]"
+            className="font-semibold lg:text-xl font-young text-[#163A1E]"
           >
             LuminaryLabs
           </Link>

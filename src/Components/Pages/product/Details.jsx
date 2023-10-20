@@ -36,12 +36,12 @@ const Details = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="max-w-6xl mx-auto grid gap-32 lg:grid-cols-2 mt-20">
+      <div className="max-w-6xl mx-auto grid lg:gap-32 lg:grid-cols-2 lg:mt-20">
         <div>
-          <img src={image} className="w-full" alt="" />
+          <img src={image} className="px-10 py-10 lg:py-0 lg:px-0  w-full" alt="" />
         </div>
         <div className="bg-[#F9FCFF]">
-          <div className="p-10 space-y-10">
+          <div className="p-6 space-y-5 lg:p-10 lg:space-y-10">
             <h1 className="text-4xl font-bold">{name}</h1>
             <div className="flex justify-between">
               <p>

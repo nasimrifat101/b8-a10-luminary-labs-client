@@ -26,7 +26,7 @@ const Product = () => {
             {loading ? (
                 <LoadingPage></LoadingPage>
             ) : phones.length > 0 ? (
-                <div className="max-w-6xl mx-auto grid grid-cols-4 gap-4">
+                <div className="max-w-6xl mx-auto p-3 lg:p-0 grid lg:grid-cols-4 gap-4">
                     {phones.map(phone => <ProductCard key={phone._id} phone={phone} />)}
                 </div>
             ) : (
