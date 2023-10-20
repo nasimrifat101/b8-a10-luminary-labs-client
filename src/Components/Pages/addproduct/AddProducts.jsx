@@ -55,7 +55,7 @@ const AddProducts = () => {
                   />
                 </div>
                 {/* flex */}
-                <div className="flex space-x-5">
+                <div className="lg:flex lg:space-x-5">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Name</span>
@@ -82,7 +82,7 @@ const AddProducts = () => {
                   </div>
                 </div>
                 {/* flex */}
-                <div className="flex space-x-5">
+                <div className="lg:flex lg:space-x-5">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Type</span>
