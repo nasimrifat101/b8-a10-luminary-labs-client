@@ -30,7 +30,7 @@ const Update = () => {
    const product ={image, name, brand, type, price, description, rating}
    console.log(product)
 
-    fetch(`http://localhost:5000/phones/${id}`, {
+    fetch(`https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/phones/${id}`, {
       method: "put",
       headers: {
         "content-type": "application/json",

@@ -7,7 +7,7 @@ const Featured = () => {
 
   useEffect(() => {
     fetch(
-      "http://localhost:5000/phones"
+      "https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/phones"
     )
       .then((res) => res.json())
       .then((data) => {

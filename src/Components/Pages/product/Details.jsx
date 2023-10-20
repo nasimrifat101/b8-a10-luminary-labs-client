@@ -18,7 +18,7 @@ const Details = () => {
     }
 
 
-    fetch("http://localhost:5000/cart", {
+    fetch("https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/cart", {
       method: "post",
       headers: {
         "content-type": "application/json",

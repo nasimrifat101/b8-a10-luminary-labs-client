@@ -9,7 +9,7 @@ const Mycart = () => {
 
 
   useEffect(()=>{
-    fetch('http://localhost:5000/cart')
+    fetch('https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/cart')
     .then(res => res.json())
     .then(data=>{
       console.log(data)
