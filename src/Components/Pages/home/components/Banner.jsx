@@ -7,7 +7,7 @@ const Banner = () => {
             Embrace the future today with the latest gadgets, smart devices, and
             powerful electronics.
           </p>
-          <h1 className="text-3xl text-right lg:text-left lg:text-7xl font-bebas">
+          <h1 className="text-3xl text-right lg:text-left lg:text-6xl font-bebas">
           Your journey to innovation starts here.
           </h1>
         </div>
