@@ -7,7 +7,6 @@ const Mycart = () => {
  const [products, setProducts] = useState([])
   const [totalAmount, setTotalAmount] = useState(0);
 
-
   useEffect(()=>{
     fetch('https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/cart')
     .then(res => res.json())

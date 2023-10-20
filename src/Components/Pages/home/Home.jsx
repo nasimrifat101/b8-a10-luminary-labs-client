@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Newsletter from "./components/Newsletter";
 
 const Home = () => {
   useEffect(() => {
@@ -26,11 +27,14 @@ const Home = () => {
       <div data-aos="fade-down">
         <Featured></Featured>
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-down">
         <SaleBanner></SaleBanner>
       </div>
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <WhyChoseeUs></WhyChoseeUs>
+      </div>
+      <div data-aos="fade-up">
+       ,<Newsletter></Newsletter>
       </div>
       <Footer></Footer>
     </div>
