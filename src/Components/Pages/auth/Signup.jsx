@@ -71,9 +71,9 @@ const Signup = () => {
           <div className="flex flex-col">
             <div className="grid rounded-box place-items-center">
             <div className="hero">
-            <div className="hero-content flex-col">
-              <div className="card flex-shrink-0 w-full hover:shadow-xl">
-                <form onSubmit={handleSignUp} className="card-body w-[500px]">
+            <div className="lg:hero-content flex-col">
+              <div className="card lg:flex-shrink-0 lg:w-full hover:shadow-xl">
+                <form onSubmit={handleSignUp} className="lg:card-body w-[250px] lg:w-[500px]">
                   <div className="flex justify-center">
                     <h1 className="text-3xl font-bold">Sign Up</h1>
                   </div>
@@ -150,7 +150,7 @@ const Signup = () => {
             </div>
             <div className="divider">OR</div>
             <div className="grid rounded-box place-items-center mb-5">
-             <button className="btn btn-outline w-96 rounded-full" onClick={googleLogin}><BsGoogle></BsGoogle>Google</button>
+             <button className="btn btn-outline lg:w-96 rounded-full" onClick={googleLogin}><BsGoogle></BsGoogle>Google</button>
             </div>
           </div>
         </div>

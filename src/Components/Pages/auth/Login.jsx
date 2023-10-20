@@ -42,7 +42,7 @@ const Login = () => {
           <div className="hero">
             <div className="hero-content flex-col">
               <div className="card flex-shrink-0 w-full hover:shadow-xl">
-                <form onSubmit={handleLogin} className="card-body w-[500px]">
+                <form onSubmit={handleLogin} className="card-body lg:w-[500px]">
                   <div className="flex justify-center">
                     <h1 className="text-3xl font-bold">Login</h1>
                   </div>
@@ -98,7 +98,7 @@ const Login = () => {
         </div>
         <div className="divider">OR</div>
         <div className="grid rounded-box place-items-center mb-5">
-          <button onClick={googleLogin} className="btn btn-outline rounded-full w-96"><BsGoogle></BsGoogle>Google</button>
+          <button onClick={googleLogin} className="btn btn-outline rounded-full lg:w-96"><BsGoogle></BsGoogle>Google</button>
         </div>
       </div>
       <ToastContainer></ToastContainer>
