@@ -52,7 +52,7 @@ const Update = () => {
       <div>
         <div className="hero">
           <div className="hero-content">
-            <div className="card w-full hover:shadow-2xl ">
+            <div className="card lg:w-full hover:shadow-2xl ">
               <form onSubmit={Addinput} className="card-body ">
                 <div className="form-control">
                   <label className="label">
@@ -67,7 +67,7 @@ const Update = () => {
                   />
                 </div>
                 {/* flex */}
-                <div className="flex space-x-5">
+                <div className="lg:flex lg:space-x-5">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Name</span>
@@ -94,7 +94,7 @@ const Update = () => {
                   </div>
                 </div>
                 {/* flex */}
-                <div className="flex space-x-5">
+                <div className="lg:flex lg:space-x-5">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Type</span>
