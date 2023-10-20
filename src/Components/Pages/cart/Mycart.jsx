@@ -29,13 +29,13 @@ const Mycart = () => {
     <div>
       <Navbar />
       <div className="container">
-        <div className="max-w-6xl mx-auto grid gap-5 grid-cols-4">
-          <div className="col-span-3 grid grid-cols-3 gap-3">
+        <div className="max-w-6xl mx-auto grid gap-5  lg:grid-cols-4">
+          <div className="col-span-3 grid p-4 lg:p-0 lg:grid-cols-3 gap-3">
             {products.map((product, index) => (
               <MyCard key={index} product={product}></MyCard>
             ))}
           </div>
-          <div className="col-span-1 bg-[#F9FCFF] w-full p-3">
+          <div className="col-span-2 p-10 lg:col-span-1 lg:bg-[#F9FCFF] w-full lg:p-3">
             <div className="space-y-3">
               <h1 className="text-2xl font-bebas">
                 Total Items: {products.length}
