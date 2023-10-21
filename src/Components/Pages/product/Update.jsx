@@ -1,42 +1,38 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Navbar from "../navbar/Navbar";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Navbar from '../navbar/Navbar';
-
-import { useLoaderData, useParams } from 'react-router-dom';
-import UpdateBanner from './UpdateBanner';
-
-
+import { useLoaderData, useParams } from "react-router-dom";
+import UpdateBanner from "./UpdateBanner";
 
 const Update = () => {
-    const { id } = useParams();
-    console.log(id) 
-    const user = useLoaderData()
-    console.log(user);
-    const { image, name, brand, price, rating, description, type } = user;
-
+  const { id } = useParams();
+  console.log(id);
+  const user = useLoaderData();
+  console.log(user);
+  const { image, name, brand, price, rating, description, type } = user;
 
   const Addinput = (e) => {
     e.preventDefault();
     const form = e.target;
-   const image = form.image.value;
-   const name = form.name.value;
-   const brand = form.brand.value;
-   const type = form.type.value;
-   const price = form.price.value;
-   const description = form.description.value;
-   const rating = form.rating.value;
+    const image = form.image.value;
+    const name = form.name.value;
+    const type = form.type.value;
+    const price = form.price.value;
+    const rating = form.rating.value;
+    const product = { image, name, brand, type, price, description, rating };
+    console.log(product);
 
-   const product ={image, name, brand, type, price, description, rating}
-   console.log(product)
-
-    fetch(`https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/phones/${id}`, {
-      method: "put",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(product),
-    })
+    fetch(
+      `https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/phones/${id}`,
+      {
+        method: "put",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(product),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -82,21 +78,6 @@ const Update = () => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Brand Name</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder={brand}
-                      name="brand"
-                      className="input input-bordered"
-                      required
-                    />
-                  </div>
-                </div>
-                {/* flex */}
-                <div className="lg:flex lg:space-x-5">
-                  <div className="form-control">
-                    <label className="label">
                       <span className="label-text">Type</span>
                     </label>
                     <input
@@ -107,6 +88,9 @@ const Update = () => {
                       required
                     />
                   </div>
+                </div>
+                {/* flex */}
+                <div className="lg:flex lg:space-x-5">
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Price</span>
@@ -119,8 +103,7 @@ const Update = () => {
                       required
                     />
                   </div>
-                </div>
-                {/* flex */}
+
                   <div className="form-control">
                     <label className="label">
                       <span className="label-text">Rating</span>
@@ -133,20 +116,7 @@ const Update = () => {
                       required
                     />
                   </div>
-                {/* flex */}
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text">Description</span>
-                    </label>
-                    <textarea
-                      type="text"
-                      defaultValue={description}
-                      name="description"
-                      className="input input-bordered"
-                      required
-                    />
-                  </div>
-
+                </div>
                 <div className="form-control mt-6">
                   <button className="btn btn-accent">Update Product</button>
                 </div>
@@ -155,7 +125,7 @@ const Update = () => {
           </div>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 };
