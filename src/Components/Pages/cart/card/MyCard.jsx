@@ -1,7 +1,7 @@
 import { ToastContainer, toast } from "react-toastify";
 
 /* eslint-disable react/prop-types */
-const MyCard = ({ product }) => {
+const MyCard = ({ product, onRemove }) => {
   const id = product._id
   const {name, price, brand, image, rating, type } = product.phone;
 
@@ -14,13 +14,14 @@ const MyCard = ({ product }) => {
       .then((data) => {
         console.log(data);
         if (data.deletedCount > 0) {
+          // Notify the parent component that the product has been removed
+          onRemove(id);
           toast.success("Product removed from cart");
         } else {
           toast.error("Product removal failed");
         }
       });
   };
-
   return (
     <div className="card card-compact border hover:shadow-2xl">
       <figure>
@@ -46,7 +47,7 @@ const MyCard = ({ product }) => {
         </div>
         <div>
           <button
-            onClick={()=>handleRemove(id)}
+             onClick={handleRemove}
             className="btn btn-error w-full"
           >
             Remove

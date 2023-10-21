@@ -14,7 +14,7 @@ const Mycart = () => {
       console.log(data)
       setProducts(data)
     })
-  },[])
+  },[products])
 
   useEffect(() => {
     const total = products.reduce((accumulator, product) => {
@@ -22,8 +22,25 @@ const Mycart = () => {
     }, 0);
     setTotalAmount(total);
   }, [products]);
-  
 
+
+   const handleRemove = (productId) => {
+    fetch(`https://luminary-labs-server-bl6h611nx-nasimrifat101.vercel.app/cart/${productId}`, {
+      method: "DELETE"
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.deletedCount > 0) {
+          setProducts(prevProducts => prevProducts.filter(product => product._id !== productId));
+        } else {
+          console.error("Failed to remove product from the server");
+        }
+      })
+      .catch(error => {
+        console.error("Error removing product:", error);
+      });
+  
+    }
   return (
     <div>
       <Navbar />
@@ -31,7 +48,7 @@ const Mycart = () => {
         <div className="max-w-6xl mx-auto grid gap-5  lg:grid-cols-4">
           <div className="col-span-3 grid p-4 lg:p-0 lg:grid-cols-3 gap-3">
             {products.map((product, index) => (
-              <MyCard key={index} product={product}></MyCard>
+              <MyCard key={index} product={product} onRemove={handleRemove}></MyCard>
             ))}
           </div>
           <div className="col-span-2 p-10 lg:col-span-1 lg:bg-[#F9FCFF] w-full lg:p-3">
