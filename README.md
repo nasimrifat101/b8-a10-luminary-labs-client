@@ -42,12 +42,7 @@ To use Luminary Lab, follow these steps:
 
 ---
 
-
-
-Just wanted to keep you in the loop. Thanks a bunch for your understanding.
-
 Best regards,
 
 [Nasim Ahamed Rifat]
-[Batch 8]
-[nasimrifat101@gmail.com]
+
