@@ -44,12 +44,6 @@ To use Luminary Lab, follow these steps:
 
 
 
-Dear Sir,
-
-I hope you're doing well. I wanted to reach out and give you a heads-up about a little hiccup I ran into. I've been having some trouble accessing our GitHubClass repository due to pesky network issues. As a result, I've had a bit of a struggle pushing my work on private Github class repository.
-
-I tried reaching out during a support session and even dropped a post on the Programming Hero Facebook page. The instructor suggested pushing my code to my personal GitHub profile as a workaround.
-
 Just wanted to keep you in the loop. Thanks a bunch for your understanding.
 
 Best regards,
